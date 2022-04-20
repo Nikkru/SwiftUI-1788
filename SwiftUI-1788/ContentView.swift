@@ -8,10 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var login = ""
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+    VStack {
+        Text("Hello, World!")
+            .padding(.top, 32)
+            .font(.largeTitle)
+        
+        HStack {
+            Text("Login:")
+        TextField("", text: $login)
+                .frame(maxWidth: 150)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+        }
+        
+        Spacer()
     }
+  }
 }
 
 struct ContentView_Previews: PreviewProvider {
