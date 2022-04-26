@@ -7,18 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18288B6228140B530080B9EF /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18288B6128140B530080B9EF /* Weather.swift */; };
 		184C3485280FCE2300203031 /* SwiftUI_1788App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184C3484280FCE2300203031 /* SwiftUI_1788App.swift */; };
 		184C3487280FCE2300203031 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184C3486280FCE2300203031 /* ContentView.swift */; };
 		184C3489280FCE2700203031 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 184C3488280FCE2700203031 /* Assets.xcassets */; };
 		184C348C280FCE2700203031 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 184C348B280FCE2700203031 /* Preview Assets.xcassets */; };
+		18B2031628187F76007EAE1E /* CircleShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2031528187F76007EAE1E /* CircleShadow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18288B6128140B530080B9EF /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		184C3481280FCE2300203031 /* SwiftUI-1788.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-1788.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		184C3484280FCE2300203031 /* SwiftUI_1788App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_1788App.swift; sourceTree = "<group>"; };
 		184C3486280FCE2300203031 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		184C3488280FCE2700203031 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		184C348B280FCE2700203031 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		18B2031528187F76007EAE1E /* CircleShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleShadow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +36,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18288B6328140B5B0080B9EF /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				18288B6128140B530080B9EF /* Weather.swift */,
+				18B2031728187FFA007EAE1E /* Service */,
+			);
+			path = Weather;
+			sourceTree = "<group>";
+		};
 		184C3478280FCE2300203031 = {
 			isa = PBXGroup;
 			children = (
@@ -55,6 +68,7 @@
 				184C3486280FCE2300203031 /* ContentView.swift */,
 				184C3488280FCE2700203031 /* Assets.xcassets */,
 				184C348A280FCE2700203031 /* Preview Content */,
+				18288B6328140B5B0080B9EF /* Weather */,
 			);
 			path = "SwiftUI-1788";
 			sourceTree = "<group>";
@@ -65,6 +79,14 @@
 				184C348B280FCE2700203031 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		18B2031728187FFA007EAE1E /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				18B2031528187F76007EAE1E /* CircleShadow.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +160,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				184C3487280FCE2300203031 /* ContentView.swift in Sources */,
+				18B2031628187F76007EAE1E /* CircleShadow.swift in Sources */,
+				18288B6228140B530080B9EF /* Weather.swift in Sources */,
 				184C3485280FCE2300203031 /* SwiftUI_1788App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
