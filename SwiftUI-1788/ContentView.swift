@@ -9,14 +9,27 @@ import SwiftUI
 import Combine
 
 struct ContentView: View {
-    @State private var login = ""
-    @State private var password = ""
-    @State private var shouldShowLogo: Bool = true
     
     private let keyboardIsOnPublisher = Publishers.Merge (NotificationCenter.default.publisher(for: UIResponder.keyboardWillChangeFrameNotification)
         .map { _ in true }, NotificationCenter.default.publisher(for: UIResponder.keyboardWillHideNotification)
         .map { _ in false }
-    ).removeDuplicates()
+    )
+        .removeDuplicates()
+    
+    @State private var login = ""
+    @State private var password = ""
+    @State private var shouldShowLogo: Bool = true
+    @State private var showIncorrectCredentialsWarning: Bool = false
+    
+//    MARK: - метод вызова ALERT
+    func verifyLoginData() {
+        if login.elementsEqual("111") && password.elementsEqual("222") {
+            
+        } else {
+            showIncorrectCredentialsWarning = true
+        }
+        password = ""
+    }
     
     var body: some View {
         
@@ -41,7 +54,8 @@ struct ContentView: View {
                         HStack {
                             Text("login:")
                                 .frame(maxWidth: 150)
-                                .background(RoundedRectangle(cornerRadius: 8).fill(.tertiary)
+                                .background(RoundedRectangle(cornerRadius: 8)
+                                    .fill(.tertiary)
                                     .shadow(radius: 5)
                                 )
                                 .foregroundColor(.white)
@@ -67,16 +81,21 @@ struct ContentView: View {
                         }
                     }.frame(maxWidth: 260)
                         .padding(.top, 50)
-                    Button(action: { print("Hello") }) {
+                    //                   MARK: - Button Log In
+                    Button(action: verifyLoginData) {
                         Text("Log in")
                             .foregroundColor(.white)
                             .bold()
                             .fontWeight(.heavy)
                             .font(.title)
                     }
+                    //                    .frame(maxWidth: 260)
+                    //                    .modifier(CornerRadiusWithShadow(shadowColor: .blue, shadowRadius: 5, cornerRadius: 8))
                     .padding(.top, 50)
                     .padding(.bottom, 20)
-                    .disabled(login.isEmpty || password.isEmpty)
+//                    .disabled(login.isEmpty || password.isEmpty)
+                    .modifier(VisibilityStyle(hidden: (login.isEmpty || password.isEmpty)))
+
                 }
                 .debug()
             }
@@ -87,6 +106,8 @@ struct ContentView: View {
             }
         }.onTapGesture {
             UIApplication.shared.endEditing()
+        }.alert(isPresented: $showIncorrectCredentialsWarning) {
+            Alert(title: Text("Error"), message: Text("Incorrect Login"))
         }
     }
     

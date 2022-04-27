@@ -7,15 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1804E2F32819CA1C009A9F9B /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1804E2F22819CA1C009A9F9B /* UserCell.swift */; };
+		1804E2F52819D076009A9F9B /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1804E2F42819D076009A9F9B /* CircleImage.swift */; };
 		18288B6228140B530080B9EF /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18288B6128140B530080B9EF /* Weather.swift */; };
 		184C3485280FCE2300203031 /* SwiftUI_1788App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184C3484280FCE2300203031 /* SwiftUI_1788App.swift */; };
 		184C3487280FCE2300203031 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184C3486280FCE2300203031 /* ContentView.swift */; };
 		184C3489280FCE2700203031 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 184C3488280FCE2700203031 /* Assets.xcassets */; };
 		184C348C280FCE2700203031 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 184C348B280FCE2700203031 /* Preview Assets.xcassets */; };
 		18B2031628187F76007EAE1E /* CircleShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2031528187F76007EAE1E /* CircleShadow.swift */; };
+		18B20319281880C5007EAE1E /* WeatherImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B20318281880C5007EAE1E /* WeatherImage.swift */; };
+		18B2031D28190452007EAE1E /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2031C28190452007EAE1E /* AlertView.swift */; };
+		18B2032128190BA2007EAE1E /* CornerRadiusWithShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2032028190BA2007EAE1E /* CornerRadiusWithShadow.swift */; };
+		18B203232819BFBB007EAE1E /* VisibilityStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B203222819BFBB007EAE1E /* VisibilityStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1804E2F22819CA1C009A9F9B /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		1804E2F42819D076009A9F9B /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		18288B6128140B530080B9EF /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		184C3481280FCE2300203031 /* SwiftUI-1788.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-1788.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		184C3484280FCE2300203031 /* SwiftUI_1788App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_1788App.swift; sourceTree = "<group>"; };
@@ -23,6 +31,10 @@
 		184C3488280FCE2700203031 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		184C348B280FCE2700203031 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		18B2031528187F76007EAE1E /* CircleShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleShadow.swift; sourceTree = "<group>"; };
+		18B20318281880C5007EAE1E /* WeatherImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherImage.swift; sourceTree = "<group>"; };
+		18B2031C28190452007EAE1E /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		18B2032028190BA2007EAE1E /* CornerRadiusWithShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRadiusWithShadow.swift; sourceTree = "<group>"; };
+		18B203222819BFBB007EAE1E /* VisibilityStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisibilityStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +52,8 @@
 			isa = PBXGroup;
 			children = (
 				18288B6128140B530080B9EF /* Weather.swift */,
-				18B2031728187FFA007EAE1E /* Service */,
+				18B2031B281903E7007EAE1E /* ViewModifiers */,
+				18B2031A281903CA007EAE1E /* ViewBuilders */,
 			);
 			path = Weather;
 			sourceTree = "<group>";
@@ -64,8 +77,11 @@
 		184C3483280FCE2300203031 /* SwiftUI-1788 */ = {
 			isa = PBXGroup;
 			children = (
+				18B203242819C971007EAE1E /* PrototypeCell */,
 				184C3484280FCE2300203031 /* SwiftUI_1788App.swift */,
 				184C3486280FCE2300203031 /* ContentView.swift */,
+				18B2031F28190B6D007EAE1E /* ViewModifiers */,
+				18B2031E28190757007EAE1E /* ViewBuilders */,
 				184C3488280FCE2700203031 /* Assets.xcassets */,
 				184C348A280FCE2700203031 /* Preview Content */,
 				18288B6328140B5B0080B9EF /* Weather */,
@@ -81,12 +97,46 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		18B2031728187FFA007EAE1E /* Service */ = {
+		18B2031A281903CA007EAE1E /* ViewBuilders */ = {
+			isa = PBXGroup;
+			children = (
+				18B20318281880C5007EAE1E /* WeatherImage.swift */,
+			);
+			path = ViewBuilders;
+			sourceTree = "<group>";
+		};
+		18B2031B281903E7007EAE1E /* ViewModifiers */ = {
 			isa = PBXGroup;
 			children = (
 				18B2031528187F76007EAE1E /* CircleShadow.swift */,
 			);
-			path = Service;
+			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
+		18B2031E28190757007EAE1E /* ViewBuilders */ = {
+			isa = PBXGroup;
+			children = (
+				18B2031C28190452007EAE1E /* AlertView.swift */,
+			);
+			path = ViewBuilders;
+			sourceTree = "<group>";
+		};
+		18B2031F28190B6D007EAE1E /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				18B2032028190BA2007EAE1E /* CornerRadiusWithShadow.swift */,
+				18B203222819BFBB007EAE1E /* VisibilityStyle.swift */,
+				1804E2F42819D076009A9F9B /* CircleImage.swift */,
+			);
+			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
+		18B203242819C971007EAE1E /* PrototypeCell */ = {
+			isa = PBXGroup;
+			children = (
+				1804E2F22819CA1C009A9F9B /* UserCell.swift */,
+			);
+			path = PrototypeCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,9 +210,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				184C3487280FCE2300203031 /* ContentView.swift in Sources */,
+				18B203232819BFBB007EAE1E /* VisibilityStyle.swift in Sources */,
+				18B2032128190BA2007EAE1E /* CornerRadiusWithShadow.swift in Sources */,
 				18B2031628187F76007EAE1E /* CircleShadow.swift in Sources */,
+				18B20319281880C5007EAE1E /* WeatherImage.swift in Sources */,
+				1804E2F32819CA1C009A9F9B /* UserCell.swift in Sources */,
 				18288B6228140B530080B9EF /* Weather.swift in Sources */,
+				18B2031D28190452007EAE1E /* AlertView.swift in Sources */,
 				184C3485280FCE2300203031 /* SwiftUI_1788App.swift in Sources */,
+				1804E2F52819D076009A9F9B /* CircleImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

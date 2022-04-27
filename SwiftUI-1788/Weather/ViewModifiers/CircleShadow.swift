@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CircelShadow: ViewModifier {
+struct CircleShadow: ViewModifier {
     
     let shadowColor: Color
     let shadowRadius: CGFloat

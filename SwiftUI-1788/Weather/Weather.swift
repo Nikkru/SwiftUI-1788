@@ -15,12 +15,14 @@ struct Weather: View {
                 Text("Today is 23 april")
                     .alignmentGuide(VerticalAlignment.center, computeValue: { $0[.bottom]})
                     .alignmentGuide(HorizontalAlignment.center, computeValue:  { $0[.trailing]})
+            WeatherImage {
                 Image("sun")
-                    .resizable()
-                    .frame(width: 100, height: 100)
+            }
+//                    .resizable()
+//                    .frame(width: 100, height: 100)
 //                    .border(Color.green)
 //                    .background(Circle().fill(Color.white).shadow(radius: 5))
-                    .modifier(CircelShadow(shadowColor: .blue, shadowRadius: 5))
+//                    .modifier(CircelShadow(shadowColor: .blue, shadowRadius: 5))
                     .alignmentGuide(VerticalAlignment.center, computeValue: { $0[.bottom]})
                     .alignmentGuide(HorizontalAlignment.center, computeValue:  { $0[.leading]})
                 Text("The Weather is perfect, 15C, no cloud, sunny, soft wind 3 m/s")
