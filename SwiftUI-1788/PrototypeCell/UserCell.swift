@@ -10,20 +10,14 @@ import SwiftUI
 struct UserCell: View {
     var body: some View {
         HStack(alignment: .center, spacing: 10) {
-            Image("homer-simpson")
-                .resizable()
-                            .scaledToFit()
-                .frame(height: 70,
-                       alignment: .leading)
-                .modifier(CircleImage(shadowColor: .black,
-                                      shadowRadius: 4,
-                                      strokeColor: .blue,
-                                      strokeLineWidth: 2))
             
+            UserImage {
+                Image("homer-simpson")
+            }
             
-            Text("Homer Simpson")
-                .fontWeight(.light)
-                .font(.title)
+            SingleTitle {
+                Text("Homer Simpson")
+            }
             
             Spacer()
         }
