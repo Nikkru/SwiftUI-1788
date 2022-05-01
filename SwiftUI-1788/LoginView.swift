@@ -8,7 +8,7 @@
 import SwiftUI
 import Combine
 
-struct ContentView: View {
+struct LoginView: View {
     
     private let keyboardIsOnPublisher = Publishers.Merge (NotificationCenter.default.publisher(for: UIResponder.keyboardWillChangeFrameNotification)
         .map { _ in true }, NotificationCenter.default.publisher(for: UIResponder.keyboardWillHideNotification)
@@ -21,10 +21,12 @@ struct ContentView: View {
     @State private var shouldShowLogo: Bool = true
     @State private var showIncorrectCredentialsWarning: Bool = false
     
+    @Binding var isUserLoggedIn: Bool
+    
 //    MARK: - метод вызова ALERT
     func verifyLoginData() {
         if login.elementsEqual("111") && password.elementsEqual("222") {
-            
+            isUserLoggedIn = true
         } else {
             showIncorrectCredentialsWarning = true
         }
@@ -47,8 +49,12 @@ struct ContentView: View {
                     if shouldShowLogo {
                         Text("VK")
                             .foregroundColor(.white)
-                            .font(.largeTitle)
-                            .padding(.top, 32)
+//                            .font(.largeTitle)
+                            .font(.system(size: 100))
+                            .bold()
+                            .padding(.top, 8)
+                            .opacity(0.7)
+                            .shadow(color: .black, radius: 3, x: -2, y: -2)
                     }
                     VStack {
                         HStack {
@@ -65,7 +71,6 @@ struct ContentView: View {
                                 .frame(maxWidth: 150)
                                 .textFieldStyle(RoundedBorderTextFieldStyle())
                         }
-                        //                        .border(Color.black)
                         HStack {
                             Text("password:")
                                 .frame(maxWidth: 150)
@@ -89,11 +94,8 @@ struct ContentView: View {
                             .fontWeight(.heavy)
                             .font(.title)
                     }
-                    //                    .frame(maxWidth: 260)
-                    //                    .modifier(CornerRadiusWithShadow(shadowColor: .blue, shadowRadius: 5, cornerRadius: 8))
                     .padding(.top, 50)
                     .padding(.bottom, 20)
-//                    .disabled(login.isEmpty || password.isEmpty)
                     .modifier(VisibilityStyle(hidden: (login.isEmpty || password.isEmpty)))
 
                 }
@@ -111,11 +113,11 @@ struct ContentView: View {
         }
     }
     
-    struct ContentView_Previews: PreviewProvider {
-        static var previews: some View {
-            ContentView()
-        }
-    }
+//    struct ContentView_Previews: PreviewProvider {
+//        static var previews: some View {
+//            LoginView(isUserLoggedIn: Binding<Any>)
+//        }
+//    }
 }
 
 extension UIApplication {

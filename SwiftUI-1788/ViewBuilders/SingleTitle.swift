@@ -15,7 +15,7 @@ struct SingleTitle: View {
     
     var body: some View { content
         .fontWeight(.light)
-        .font(.title)
+        .font(.title2)
         .minimumScaleFactor(0.5)
     }
 }
