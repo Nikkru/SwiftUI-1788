@@ -17,34 +17,6 @@ struct HomeView: View {
                 .navigationTitle("Home")
         }
         .navigationViewStyle(.stack)
-//        TabView {
-//            Text("Wellcome, User!")
-//                .font(.title)
-//                .tabItem {
-//                    Image(systemName: "house")
-//                    Text("Home")
-//            }
-//            Text("Gallery")
-//                .tabItem {
-//                    Image(systemName: "camera.on.rectangle.fill")
-//                    Text("Pictures gallery")
-//                }
-//            FriendsListView()
-//                .tabItem {
-//                    Image(systemName: "person.2.circle.fill")
-//                    Text("Friends")
-//                }
-//            Text("Groups")
-//                .tabItem {
-//                    Image(systemName: "person.3.fill")
-//                    Text("Groups")
-//                }
-//            Text("News")
-//                .tabItem {
-//                    Image(systemName: "newspaper.fill")
-//                    Text("News")
-//                }
-//        }
     }
 }
 

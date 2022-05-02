@@ -23,29 +23,23 @@ struct FriendDetailView: View {
                     cornerRadius: 12))
             
             Text(friend.name)
-                Spacer()
+            Spacer()
             VStack {
-//                Button {
-                    NavigationLink(destination: PicturesGalleryView()) {
+                NavigationLink(destination: PicturesGalleryView()) {
+                    VStack {
                         VStack {
-                            VStack {
-                                Image(systemName: "camera.on.rectangle.fill")
-                                    .font(.system(size: 32))
-                                    .padding()
-                                    .foregroundColor(Color.blue)
-                            }
-                            .overlay(Circle().stroke(Color.blue, lineWidth: 5))
-                            Text("Images Gallery")
-                                .foregroundColor(.blue)
+                            Image(systemName: "camera.on.rectangle.fill")
+                                .font(.system(size: 32))
+                                .padding()
+                                .foregroundColor(Color.blue)
                         }
+                        .overlay(Circle().stroke(Color.blue, lineWidth: 5))
+                        Text("Images Gallery")
+                            .foregroundColor(.blue)
                     }
-//                } label: {
-//           
-//            }
-               
+                }
             }
             .padding(.vertical)
-            
         }
     }
 }

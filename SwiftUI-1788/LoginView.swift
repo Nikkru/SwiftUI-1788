@@ -99,7 +99,7 @@ struct LoginView: View {
                     .modifier(VisibilityStyle(hidden: (login.isEmpty || password.isEmpty)))
 
                 }
-                .debug()
+//                .debug()
             }
             .onReceive(keyboardIsOnPublisher) { isKeyboardOn in
                 withAnimation(Animation.easeInOut(duration: 0.5)) {

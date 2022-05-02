@@ -21,6 +21,7 @@
 		18288300281CDD4400FEB5A4 /* FriendDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182882FF281CDD4400FEB5A4 /* FriendDetailView.swift */; };
 		1828C482281E7970006C8B66 /* ImageGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1828C481281E7970006C8B66 /* ImageGalleryView.swift */; };
 		1828C484281E838D006C8B66 /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1828C483281E838D006C8B66 /* ImageModel.swift */; };
+		182AF82F28201FEC007F4D83 /* SectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182AF82E28201FEC007F4D83 /* SectionModel.swift */; };
 		183CD53B281C9303001884AB /* FriendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183CD53A281C9303001884AB /* FriendModel.swift */; };
 		184C3485280FCE2300203031 /* SwiftUI_1788App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184C3484280FCE2300203031 /* SwiftUI_1788App.swift */; };
 		184C3487280FCE2300203031 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184C3486280FCE2300203031 /* LoginView.swift */; };
@@ -46,6 +47,7 @@
 		182882FF281CDD4400FEB5A4 /* FriendDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDetailView.swift; sourceTree = "<group>"; };
 		1828C481281E7970006C8B66 /* ImageGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGalleryView.swift; sourceTree = "<group>"; };
 		1828C483281E838D006C8B66 /* ImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
+		182AF82E28201FEC007F4D83 /* SectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionModel.swift; sourceTree = "<group>"; };
 		183CD53A281C9303001884AB /* FriendModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendModel.swift; sourceTree = "<group>"; };
 		184C3481280FCE2300203031 /* SwiftUI-1788.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-1788.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		184C3484280FCE2300203031 /* SwiftUI_1788App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_1788App.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 			children = (
 				183CD53A281C9303001884AB /* FriendModel.swift */,
 				1828C483281E838D006C8B66 /* ImageModel.swift */,
+				182AF82E28201FEC007F4D83 /* SectionModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 				184C3487280FCE2300203031 /* LoginView.swift in Sources */,
 				18B203232819BFBB007EAE1E /* VisibilityStyle.swift in Sources */,
 				1828C482281E7970006C8B66 /* ImageGalleryView.swift in Sources */,
+				182AF82F28201FEC007F4D83 /* SectionModel.swift in Sources */,
 				18B2032128190BA2007EAE1E /* CornerRadiusWithShadow.swift in Sources */,
 				180349C1281E9D1700CCC90B /* TabBarView.swift in Sources */,
 				1804E2FD281A85A3009A9F9B /* SingleTitle.swift in Sources */,
