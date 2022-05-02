@@ -78,6 +78,20 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		182AF83028202D0C007F4D83 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				184C3486280FCE2300203031 /* LoginView.swift */,
+				1804E300281A8C8A009A9F9B /* HomeView.swift */,
+				180349C2281EA51500CCC90B /* PicturesGalleryView.swift */,
+				1828C481281E7970006C8B66 /* ImageGalleryView.swift */,
+				180349C0281E9D1700CCC90B /* TabBarView.swift */,
+				182882FF281CDD4400FEB5A4 /* FriendDetailView.swift */,
+				1804E2F22819CA1C009A9F9B /* FriendsListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		183CD53C281CD3EB001884AB /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -108,13 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				184C3484280FCE2300203031 /* SwiftUI_1788App.swift */,
-				184C3486280FCE2300203031 /* LoginView.swift */,
-				1804E300281A8C8A009A9F9B /* HomeView.swift */,
-				180349C2281EA51500CCC90B /* PicturesGalleryView.swift */,
-				1828C481281E7970006C8B66 /* ImageGalleryView.swift */,
-				180349C0281E9D1700CCC90B /* TabBarView.swift */,
-				182882FF281CDD4400FEB5A4 /* FriendDetailView.swift */,
-				1804E2F22819CA1C009A9F9B /* FriendsListView.swift */,
+				182AF83028202D0C007F4D83 /* Views */,
 				183CD53C281CD3EB001884AB /* Models */,
 				18B203242819C971007EAE1E /* PrototypeCell */,
 				18B2031F28190B6D007EAE1E /* ViewModifiers */,

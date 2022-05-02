@@ -25,7 +25,7 @@ struct LoginView: View {
     
 //    MARK: - метод вызова ALERT
     func verifyLoginData() {
-        if login.elementsEqual("111") && password.elementsEqual("222") {
+        if (login.elementsEqual("111") && password.elementsEqual("222")) || (login.elementsEqual("bar") && password.elementsEqual("foo"))  {
             isUserLoggedIn = true
         } else {
             showIncorrectCredentialsWarning = true
