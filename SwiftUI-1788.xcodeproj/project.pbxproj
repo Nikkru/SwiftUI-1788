@@ -48,6 +48,7 @@
 		1828C481281E7970006C8B66 /* ImageGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGalleryView.swift; sourceTree = "<group>"; };
 		1828C483281E838D006C8B66 /* ImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
 		182AF82E28201FEC007F4D83 /* SectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionModel.swift; sourceTree = "<group>"; };
+		182AF831282043ED007F4D83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		183CD53A281C9303001884AB /* FriendModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendModel.swift; sourceTree = "<group>"; };
 		184C3481280FCE2300203031 /* SwiftUI-1788.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-1788.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		184C3484280FCE2300203031 /* SwiftUI_1788App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_1788App.swift; sourceTree = "<group>"; };
@@ -57,6 +58,7 @@
 		18B2031C28190452007EAE1E /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		18B2032028190BA2007EAE1E /* CornerRadiusWithShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRadiusWithShadow.swift; sourceTree = "<group>"; };
 		18B203222819BFBB007EAE1E /* VisibilityStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisibilityStyle.swift; sourceTree = "<group>"; };
+		18C2059A282080320018751C /* VKSdkFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VKSdkFramework.framework; path = Carthage/Build/iOS/VKSdkFramework.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 			children = (
 				184C3483280FCE2300203031 /* SwiftUI-1788 */,
 				184C3482280FCE2300203031 /* Products */,
+				18C20599282080320018751C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -121,6 +124,7 @@
 		184C3483280FCE2300203031 /* SwiftUI-1788 */ = {
 			isa = PBXGroup;
 			children = (
+				182AF831282043ED007F4D83 /* Info.plist */,
 				184C3484280FCE2300203031 /* SwiftUI_1788App.swift */,
 				182AF83028202D0C007F4D83 /* Views */,
 				183CD53C281CD3EB001884AB /* Models */,
@@ -172,6 +176,14 @@
 			path = PrototypeCell;
 			sourceTree = "<group>";
 		};
+		18C20599282080320018751C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18C2059A282080320018751C /* VKSdkFramework.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -182,6 +194,7 @@
 				184C347D280FCE2300203031 /* Sources */,
 				184C347E280FCE2300203031 /* Frameworks */,
 				184C347F280FCE2300203031 /* Resources */,
+				18C2059828207B5A0018751C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -216,6 +229,8 @@
 				Base,
 			);
 			mainGroup = 184C3478280FCE2300203031;
+			packageReferences = (
+			);
 			productRefGroup = 184C3482280FCE2300203031 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -236,6 +251,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		18C2059828207B5A0018751C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage outdated --xcode-warnings 2>/dev/null\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		184C347D280FCE2300203031 /* Sources */ = {
@@ -393,7 +428,12 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI-1788/Preview Content\"";
 				DEVELOPMENT_TEAM = 9BK8NWYM5V;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SwiftUI-1788/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -422,7 +462,12 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI-1788/Preview Content\"";
 				DEVELOPMENT_TEAM = 9BK8NWYM5V;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SwiftUI-1788/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
