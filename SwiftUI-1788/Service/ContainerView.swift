@@ -8,12 +8,14 @@
 import SwiftUI
 
 struct ContainerView: View {
+    
     @State private var shouldShowMainView: Bool = false
     
     var body: some View {
         NavigationView {
             HStack {
                 LoginView(isUserLoggedIn: $shouldShowMainView)
+                
                 //MARK: - NAVIGATION LINKS
                 NavigationLink(destination: TabBarView(),
                                isActive: $shouldShowMainView) {
@@ -22,6 +24,7 @@ struct ContainerView: View {
             }
         }
     }
+    
     struct ContainerView_Previews: PreviewProvider {
         static var previews: some View {
             ContainerView()

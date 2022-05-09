@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CircleImage: ViewModifier {
+struct CircleImageStyle: ViewModifier {
     
     let shadowColor: Color
     let shadowRadius: CGFloat

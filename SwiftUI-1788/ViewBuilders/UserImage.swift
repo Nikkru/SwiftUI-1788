@@ -16,7 +16,7 @@ struct UserImage: View {
         .resizable()
         .scaledToFit()
         .frame(width: 50, height: 50)
-        .modifier(CircleImage(shadowColor: .black,
+        .modifier(CircleImageStyle(shadowColor: .black,
                               shadowRadius: 3,
                               strokeColor: .blue,
                               strokeLineWidth: 2))

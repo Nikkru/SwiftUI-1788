@@ -16,7 +16,6 @@ struct CornerRadiusWithShadow: ViewModifier {
     func body(content: Content) -> some View {
         content
             .cornerRadius(cornerRadius)
-//            .background(Color.clear)
                 .shadow(color: shadowColor, radius: shadowRadius)
     }
 }
