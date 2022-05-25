@@ -61,14 +61,6 @@ struct LoginView: View {
                             LabelForTextfield {
                                 Text("login")
                             }
-//                            Text("login:")
-//                                .frame(maxWidth: 150)
-//                                .background(RoundedRectangle(cornerRadius: 8)
-//                                    .fill(.tertiary)
-//                                    .shadow(radius: 5)
-//                                )
-//                                .foregroundColor(.white)
-//                                .font(.title)
                             Spacer()
                             TextField("login", text: $login)
                                 .frame(maxWidth: 150)
@@ -78,13 +70,6 @@ struct LoginView: View {
                             LabelForTextfield {
                                 Text("password")
                             }
-//                            Text("password:")
-//                                .frame(maxWidth: 150)
-//                                .background(RoundedRectangle(cornerRadius: 8).fill(.tertiary)
-//                                    .shadow(radius: 5)
-//                                )
-//                                .foregroundColor(.white)
-//                                .font(.title)
                             Spacer()
                             SecureField("password", text: $password)
                                 .frame(maxWidth: 150)

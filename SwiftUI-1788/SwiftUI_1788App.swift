@@ -12,7 +12,8 @@ struct SwiftUI_1788App: App {
     var body: some Scene {
         WindowGroup {
 //            LoginView()
-            ContainerView()
+//            ContainerView()
+            AuthVKView()
         }
     }
 }

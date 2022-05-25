@@ -23,15 +23,20 @@
 		1828C484281E838D006C8B66 /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1828C483281E838D006C8B66 /* ImageModel.swift */; };
 		182AF82F28201FEC007F4D83 /* SectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182AF82E28201FEC007F4D83 /* SectionModel.swift */; };
 		183CD53B281C9303001884AB /* FriendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183CD53A281C9303001884AB /* FriendModel.swift */; };
+		1845F1D5283159150006C616 /* SessionVK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1845F1D4283159150006C616 /* SessionVK.swift */; };
+		1845F1D828315A3E0006C616 /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = 1845F1D728315A3E0006C616 /* SwiftKeychainWrapper */; };
 		184C3485280FCE2300203031 /* SwiftUI_1788App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184C3484280FCE2300203031 /* SwiftUI_1788App.swift */; };
 		184C3487280FCE2300203031 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184C3486280FCE2300203031 /* LoginView.swift */; };
 		184C3489280FCE2700203031 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 184C3488280FCE2700203031 /* Assets.xcassets */; };
 		184C348C280FCE2700203031 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 184C348B280FCE2700203031 /* Preview Assets.xcassets */; };
 		184C527F28296F4300357BB4 /* LabelForTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184C527E28296F4300357BB4 /* LabelForTextFieldStyle.swift */; };
 		184C5281282973A900357BB4 /* LabelForTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184C5280282973A900357BB4 /* LabelForTextfield.swift */; };
+		184E160E283BFF900041D7B8 /* VKLoginWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184E160D283BFF900041D7B8 /* VKLoginWebView.swift */; };
+		184E1610283C09CB0041D7B8 /* AuthVKView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184E160F283C09CB0041D7B8 /* AuthVKView.swift */; };
 		18B2031D28190452007EAE1E /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2031C28190452007EAE1E /* AlertView.swift */; };
 		18B2032128190BA2007EAE1E /* CornerRadiusWithShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2032028190BA2007EAE1E /* CornerRadiusWithShadow.swift */; };
 		18B203232819BFBB007EAE1E /* VisibilityStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B203222819BFBB007EAE1E /* VisibilityStyle.swift */; };
+		18C3F141282D5CA3005E0562 /* AuthVKView_F.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C3F140282D5CA3005E0562 /* AuthVKView_F.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +56,7 @@
 		1828C483281E838D006C8B66 /* ImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
 		182AF82E28201FEC007F4D83 /* SectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionModel.swift; sourceTree = "<group>"; };
 		183CD53A281C9303001884AB /* FriendModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendModel.swift; sourceTree = "<group>"; };
+		1845F1D4283159150006C616 /* SessionVK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionVK.swift; sourceTree = "<group>"; };
 		184C3481280FCE2300203031 /* SwiftUI-1788.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-1788.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		184C3484280FCE2300203031 /* SwiftUI_1788App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_1788App.swift; sourceTree = "<group>"; };
 		184C3486280FCE2300203031 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -58,9 +64,12 @@
 		184C348B280FCE2700203031 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		184C527E28296F4300357BB4 /* LabelForTextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelForTextFieldStyle.swift; sourceTree = "<group>"; };
 		184C5280282973A900357BB4 /* LabelForTextfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelForTextfield.swift; sourceTree = "<group>"; };
+		184E160D283BFF900041D7B8 /* VKLoginWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKLoginWebView.swift; sourceTree = "<group>"; };
+		184E160F283C09CB0041D7B8 /* AuthVKView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVKView.swift; sourceTree = "<group>"; };
 		18B2031C28190452007EAE1E /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		18B2032028190BA2007EAE1E /* CornerRadiusWithShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRadiusWithShadow.swift; sourceTree = "<group>"; };
 		18B203222819BFBB007EAE1E /* VisibilityStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisibilityStyle.swift; sourceTree = "<group>"; };
+		18C3F140282D5CA3005E0562 /* AuthVKView_F.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVKView_F.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1845F1D828315A3E0006C616 /* SwiftKeychainWrapper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				1804E303281A9859009A9F9B /* ContainerView.swift */,
+				1845F1D4283159150006C616 /* SessionVK.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -92,6 +103,7 @@
 				180349C0281E9D1700CCC90B /* TabBarView.swift */,
 				182882FF281CDD4400FEB5A4 /* FriendDetailView.swift */,
 				1804E2F22819CA1C009A9F9B /* FriendsListView.swift */,
+				184E160C283BFF4B0041D7B8 /* AuthVK */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -131,6 +143,7 @@
 				18B203242819C971007EAE1E /* PrototypeCell */,
 				18B2031F28190B6D007EAE1E /* ViewModifiers */,
 				18B2031E28190757007EAE1E /* ViewBuilders */,
+				18C3F13F282D5C04005E0562 /* VK-api */,
 				1804E302281A9821009A9F9B /* Service */,
 				184C3488280FCE2700203031 /* Assets.xcassets */,
 				184C348A280FCE2700203031 /* Preview Content */,
@@ -144,6 +157,16 @@
 				184C348B280FCE2700203031 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		184E160C283BFF4B0041D7B8 /* AuthVK */ = {
+			isa = PBXGroup;
+			children = (
+				184E160F283C09CB0041D7B8 /* AuthVKView.swift */,
+				184E160D283BFF900041D7B8 /* VKLoginWebView.swift */,
+				18C3F140282D5CA3005E0562 /* AuthVKView_F.swift */,
+			);
+			path = AuthVK;
 			sourceTree = "<group>";
 		};
 		18B2031E28190757007EAE1E /* ViewBuilders */ = {
@@ -178,6 +201,13 @@
 			path = PrototypeCell;
 			sourceTree = "<group>";
 		};
+		18C3F13F282D5C04005E0562 /* VK-api */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "VK-api";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -194,6 +224,9 @@
 			dependencies = (
 			);
 			name = "SwiftUI-1788";
+			packageProductDependencies = (
+				1845F1D728315A3E0006C616 /* SwiftKeychainWrapper */,
+			);
 			productName = "SwiftUI-1788";
 			productReference = 184C3481280FCE2300203031 /* SwiftUI-1788.app */;
 			productType = "com.apple.product-type.application";
@@ -222,6 +255,9 @@
 				Base,
 			);
 			mainGroup = 184C3478280FCE2300203031;
+			packageReferences = (
+				1845F1D628315A3E0006C616 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */,
+			);
 			productRefGroup = 184C3482280FCE2300203031 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -260,17 +296,21 @@
 				1804E2FD281A85A3009A9F9B /* SingleTitle.swift in Sources */,
 				1804E2FB281A83A7009A9F9B /* TitleText.swift in Sources */,
 				18288300281CDD4400FEB5A4 /* FriendDetailView.swift in Sources */,
+				1845F1D5283159150006C616 /* SessionVK.swift in Sources */,
 				1804E2F32819CA1C009A9F9B /* FriendsListView.swift in Sources */,
+				184E160E283BFF900041D7B8 /* VKLoginWebView.swift in Sources */,
 				1804E2FF281A874A009A9F9B /* FootnoteText.swift in Sources */,
 				18B2031D28190452007EAE1E /* AlertView.swift in Sources */,
 				183CD53B281C9303001884AB /* FriendModel.swift in Sources */,
 				180349C3281EA51500CCC90B /* PicturesGalleryView.swift in Sources */,
+				18C3F141282D5CA3005E0562 /* AuthVKView_F.swift in Sources */,
 				1828C484281E838D006C8B66 /* ImageModel.swift in Sources */,
 				184C3485280FCE2300203031 /* SwiftUI_1788App.swift in Sources */,
 				1804E2F9281A7E18009A9F9B /* UserGroup.swift in Sources */,
 				1804E304281A9859009A9F9B /* ContainerView.swift in Sources */,
 				184C5281282973A900357BB4 /* LabelForTextfield.swift in Sources */,
 				1804E2F52819D076009A9F9B /* CircleImageStyle.swift in Sources */,
+				184E1610283C09CB0041D7B8 /* AuthVKView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,6 +511,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1845F1D628315A3E0006C616 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jrendel/SwiftKeychainWrapper.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1845F1D728315A3E0006C616 /* SwiftKeychainWrapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1845F1D628315A3E0006C616 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */;
+			productName = SwiftKeychainWrapper;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 184C3479280FCE2300203031 /* Project object */;
 }
